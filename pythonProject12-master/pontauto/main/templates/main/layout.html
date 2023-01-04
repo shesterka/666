@@ -11,8 +11,24 @@
     <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
 </head>
 <body>
-    {% block content %}
+  <aside>
+      <img src="{% static 'main/img/e70bd31s-1920.jpg' %}" alt = "Лого">
+      <span class="logo">PontAuto</span>
+      <h3>Навигация</h3>
+      <ul>
+          <a href=""><li>Главная</li>/a>
+          <a href=""><li>Про нас</li>/a>
+          <a href=""><li>Контакты</li>/a>
+      </ul>
 
+  </aside>
+
+
+   </div>
+
+   <main>
+    {% block content %}
     {% endblock %}
+  </main>
 </body>
 </html>
